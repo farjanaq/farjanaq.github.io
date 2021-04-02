@@ -15,24 +15,7 @@
 
 	<script src="https://smtpjs.com/v3/smtp.js">
 	</script>
-	<script type="text/javascript">
-
-		function sendEmail() {
-
-				Email.send({
-					Host: "smtp.gmail.com",
-					Username: "fkb5087@gmail.com",
-					Password: "Vue@1234",
-					To: 'frjnsktb@gmail.com',
-					From : document.querySelector("#email").value,
-					Subject : document.querySelector("#subject").value.concat(document.querySelector("#name").value),
-			 		Body : document.querySelector("#message").value,
-
-				})
-
-		}
-
-	</script>
+	
 </head>
 
 <body>
@@ -359,7 +342,24 @@
 	</section>
 	</div>
 
+<script type="text/javascript">
 
+		function sendEmail() {
+
+				Email.send({
+					Host: "smtp.gmail.com",
+					Username: "fkb5087@gmail.com",
+					Password: "Vue@1234",
+					To: 'frjnsktb@gmail.com',
+					From : document.querySelector("#email").value,
+					Subject : document.querySelector("#subject").value.concat(document.querySelector("#name").value),
+			 		Body : document.querySelector("#message").value,
+
+				})
+
+		}
+
+	</script>
 	<script src='js/jquery.min.js'></script>
 	<script src='js/jquery.shuffle.min.js'></script>
 	<script src='js/jquery.magnific-popup.min.js'></script>
